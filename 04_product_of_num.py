@@ -37,29 +37,29 @@ def array_of_products(nums):
 # print(array_of_products(nums))
 
 print('\n********Test Case 1************')
-# Test case 1: When nums is null.
+# Test case 1: When nums is null. Should return [].
 nums = None
 print(array_of_products(nums))
 
 
 print('\n********Test Case 2************')
-# Test case 2: When nums is an empty array, should return [-1, -1]
+# Test case 2: When nums is an empty array, Should return [].
 nums = []
 print(array_of_products(nums))
 
 print('\n********Test Case 3************')
-# Test case 3: When nums has just one occurrence of val, should return [0, 0]
+# Test case 3: When nums has just only one element in it, should return []
 nums = [3]
 print(array_of_products(nums))
 
 
 print('\n********Test Case 4************')
-# Test case 4: When nums has multiple occurrences of val,  should return [0, 2]
+# Test case 4: When nums has 0 in it. In this case, Should return [0, 0, 6].
 nums = [3, 2, 0]
 print(array_of_products(nums))
 
 
-# print('\n********Test Case 5************')
-# # Test case 5: All zeros.
+print('\n********Test Case 5************')
+# # Test case 5: All elements in nums are valid. In this case, Should return [6, 9, 6].
 nums = [3, 2, 3]
 print(array_of_products(nums))
